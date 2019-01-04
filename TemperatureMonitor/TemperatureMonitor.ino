@@ -39,7 +39,7 @@ void loop() {
       ledState = LOW;
     }    
     getTemperatureData();
-  }m 
+  } 
 }
 
 void getTemperatureData()
