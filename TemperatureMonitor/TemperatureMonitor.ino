@@ -6,6 +6,7 @@ void getTemperatureData();
 const int BAUD_RATE = 9600;       // Fixed Baud Rate
 const int GREEN_LED = 8;          // Green LED Pin
 const int RED_LED   = 9;          // Red   LED Pin
+const int COOLER_PIN = 10;        // Cooler Pin
 const long INTERVAL = 1000;       // Time for each iteration
 
 
@@ -24,9 +25,10 @@ void setup() {
     while(1){}
   }
   
-  Serial.begin(BAUD_RATE);
   pinMode(GREEN_LED, OUTPUT);
   pinMode(RED_LED,   OUTPUT);
+  pinMode(COOLER_PIN, OUTPUT);
+  Serial.begin(BAUD_RATE);
 }
 
 void loop() {
@@ -62,5 +64,14 @@ void getTemperatureData()
   {
     digitalWrite(GREEN_LED, ledState); // If Temperature is Within the Thresholds, Blink Green LED
     digitalWrite(RED_LED, LOW);        // And Turn Off Red LED if it Was Blinking Before
+  }
+  
+  if (temperature > upper_temperature_threshold)
+  {
+    digitalWrite(COOLER_PIN, HIGH); // If temperature exceeds the upper Threshold, turn the cooler (fan) on
+  }
+  else
+  {
+    digitalWrite(COOLER_PIN, LOW); // If temperature drops below upper Threshold, turn the cooler (fan) off
   }
 }
