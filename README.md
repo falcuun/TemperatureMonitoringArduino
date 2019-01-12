@@ -21,5 +21,6 @@ Beginning altitude value is set by the user, for more correct measurements.
    And to upload it just hit CTR + ALT + U on your keyboard. 
 
 ### Reading the Data
-	To read the values of the temperateure and pressure, you will need a Serial monitor
-	Arduino IDE and VS Code have build in Monitors, or you can download one from:[HERE](https://github.com/falcuun/SimpleArduinoMonitor)
+To read the values of the temperateure and pressure, you will need a Serial monitor
+Arduino IDE and VS Code have build in Monitors, or you can download one from:
+[HERE](https://github.com/falcuun/SimpleArduinoMonitor)
