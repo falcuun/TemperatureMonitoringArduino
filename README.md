@@ -19,3 +19,8 @@ Beginning altitude value is set by the user, for more correct measurements.
    
    You can also use Visual Studio Code with Arduino Extension. Process of selecting the port is same
    And to upload it just hit CTR + ALT + U on your keyboard. 
+
+### Reading the Data
+	To read the values of the temperateure and pressure, you will need a Serial monitor
+	Arduino IDE and VS Code have build in Monitors, or you can download one from
+	[https://github.com/falcuun/SimpleArduinoMonitor](https://github.com/falcuun/SimpleArduinoMonitor)
