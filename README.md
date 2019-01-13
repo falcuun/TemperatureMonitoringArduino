@@ -9,6 +9,12 @@ Beginning altitude value is set by the user, for more correct measurements.
   
   It also has LED Blinking function if the temperature crosses either of the thresholds (H/L)
   
+### Wiring
+    - VIN - 3.3V
+    - GND - GND
+    - SDA - A4
+    - SCL - A5
+
 
 ### Run
 
