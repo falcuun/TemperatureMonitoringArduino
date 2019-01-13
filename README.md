@@ -10,10 +10,10 @@ Beginning altitude value is set by the user, for more correct measurements.
   It also has LED Blinking function if the temperature crosses either of the thresholds (H/L)
   
 ### Wiring
-    - VIN - 3.3V
-    - GND - GND
-    - SDA - A4
-    - SCL - A5
+    - VIN - 3.3V pin
+    - GND - GND pin
+    - SDA - pin A4
+    - SCL - pin A5
 
 
 ### Run
