@@ -21,7 +21,7 @@ Beginning altitude value is set by the user, for more correct measurements.
 	To run this Sketch, you will need Arduino IDE and an available USB Port on your PC.
     	* Open Arduino IDE and copy the code inside the editor
     	* Plug in the Arduino with USB-cable and in Arduino IDE Select COM Port where Arduino is Plugged
-    	* Hit Upload Button
+    	* Hit Upload Button.
    
    You can also use Visual Studio Code with Arduino Extension. Process of selecting the port is same
    And to upload it just hit CTR + ALT + U on your keyboard. 
